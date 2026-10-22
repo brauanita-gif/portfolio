@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An anonymized portfolio case study on line-by-line evaluation of AI-translated Italian and English dialogue.">
+  <title>AI Translation Quality Evaluation | Italian ↔ English</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="topbar"><div class="wrap topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">AB</span><span class="brand-name">Anita Brau</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="speech-quality-evaluation.html">Speech quality</a>
+      <a href="linkedin-job-tracker-empty-state.html">Localization QA</a>
+      <a class="nav-cta" href="evaluation-design.html">Frameworks</a>
+    </nav>
+  </div></header>
+
+  <main>
+    <section class="wrap hero" aria-labelledby="page-title">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Functional &amp; linguistic testing</div>
+          <h1 id="page-title">AI Translation Quality Evaluation</h1>
+          <p class="lead">A line-by-line review of AI-translated dialogue between Italian and English—checking not only what a sentence says, but how well it works in context.</p>
+          <div class="chips" aria-label="Case study attributes">
+            <span class="chip">Italian ↔ English</span>
+            <span class="chip">Dialogue evaluation</span>
+            <span class="chip">Anonymized case</span>
+          </div>
+        </div>
+        <aside class="snapshot" aria-label="Project snapshot">
+          <p class="snapshot-label">At a glance</p>
+          <dl>
+            <div><dt>Review unit</dt><dd>Each eligible dialogue line</dd></div>
+            <div><dt>Scoring</dt><dd>Required 1–5 scale</dd></div>
+            <div><dt>Feedback</dt><dd>Criterion-based comments</dd></div>
+            <div><dt>Output</dt><dd>Suggested translations where useful</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap metrics" aria-label="Evaluation summary">
+      <div class="fact"><strong>2 directions</strong><p>Italian ↔ English</p></div>
+      <div class="fact"><strong>1–5</strong><p>Score per reviewed translation</p></div>
+      <div class="fact"><strong>Evidence-led</strong><p>Comments tied to the text</p></div>
+    </section>
+
+    <section class="wrap section" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <h2 id="method-title">A consistent review, line by line</h2>
+        <p>The supplied instructions set a clear workflow: assess every eligible row, explain the judgment in words, and suggest an alternative when it adds value.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step"><span class="step-num">1</span><h3>Read in context</h3><p>Compare source and translation while tracking the speaker and dialogue flow.</p></article>
+        <article class="step"><span class="step-num">2</span><h3>Respect skips</h3><p>Do not review rows explicitly marked TRUE in the skipped column.</p></article>
+        <article class="step"><span class="step-num">3</span><h3>Score and explain</h3><p>Assign a 1–5 score and write a concise comment for each reviewed row.</p></article>
+        <article class="step"><span class="step-num">4</span><h3>Offer a variant</h3><p>Provide a proposed translation when a specific improvement is warranted.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="criteria" aria-labelledby="criteria-title">
+      <div class="section-heading">
+        <h2 id="criteria-title">What the review looked for</h2>
+        <p>Comments named the relevant quality dimension rather than assigning numeric sub-scores.</p>
+      </div>
+      <div class="criteria-grid">
+        <div class="criterion"><b>Grammar</b><span>Correct forms and sentence construction</span></div>
+        <div class="criterion"><b>Naturalness</b><span>Idiomatic, fluent target-language phrasing</span></div>
+        <div class="criterion"><b>Structure</b><span>Preserved content and formatting</span></div>
+        <div class="criterion"><b>Sentence context</b><span>Meaning that fits the surrounding turn</span></div>
+        <div class="criterion"><b>Appropriateness</b><span>Suitable wording for the situation</span></div>
+        <div class="criterion"><b>Tone of voice</b><span>Consistent conversational tone</span></div>
+        <div class="criterion"><b>Politeness</b><span>Register and level of courtesy</span></div>
+        <div class="criterion"><b>Source integrity</b><span>Placeholders and encoded text retained as needed</span></div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="findings" aria-labelledby="findings-title">
+      <div class="section-heading">
+        <h2 id="findings-title">Small choices, clear evidence</h2>
+        <p>These anonymized examples illustrate how the review separated linguistic fit from source-text handling.</p>
+      </div>
+      <div class="evidence-grid">
+        <article class="evidence-card">
+          <span class="label">Register &amp; appropriateness</span>
+          <h3>A greeting should fit the conversation</h3>
+          <div class="example-line"><span>Formal greeting in Italian</span><span class="arrow" aria-hidden="true">→</span><span>Suggested: “Ciao”</span></div>
+          <p>The comment identified that the translated greeting felt more formal than the context called for, then supplied a more fitting alternative.</p>
+        </article>
+        <article class="evidence-card">
+          <span class="label">Source-text integrity</span>
+          <h3>Formatting can carry meaning</h3>
+          <div class="example-line"><code>&amp;amp;</code><span class="arrow" aria-hidden="true">→</span><code>&amp;</code></div>
+          <p>An encoded ampersand was flagged where normalizing the entity could change the source text’s formatting or integrity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section deliverables" aria-labelledby="deliverables-title">
+      <div>
+        <h2 id="deliverables-title">A usable evaluation record</h2>
+        <p>Each finding was designed to be easy to review, understand, and act on.</p>
+      </div>
+      <ul>
+        <li>Line-level scores on the required scale</li>
+        <li>Written comments for reviewed rows</li>
+        <li>Clear criterion labels, no numeric sub-scores</li>
+        <li>Proposed variants for targeted improvements</li>
+        <li>Rows marked as skipped left unevaluated</li>
+        <li>Accepted translations documented alongside issues</li>
+      </ul>
+    </section>
+
+    <section class="wrap section outcome" aria-labelledby="outcome-title">
+      <h2 id="outcome-title">Outcome</h2>
+      <p>A traceable quality assessment that distinguishes accurate translations from narrower issues of register, naturalness, context, or source formatting—turning subtle judgments into actionable evaluation notes.</p>
+    </section>
+
+    <aside class="wrap notice" aria-label="Anonymization note">Anonymized portfolio case study. Personal names, client and product identifiers, source-file names, and access links are intentionally omitted to protect confidentiality.</aside>
+  </main>
+
+  <footer class="wrap footer-inner"><p>Functional &amp; linguistic testing</p><span>AI Translation Quality Evaluation · Italian ↔ English</span></footer>
+</body>
+</html>
